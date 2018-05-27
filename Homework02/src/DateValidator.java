@@ -9,10 +9,12 @@ public class DateValidator {
 		// date
 		System.out.println("Ievadi mçneða dienu!");
 		int date = scanner.nextInt();
+		System.out.println("Ievadi mçneða datumu : ");
+		int month = scanner.nextInt();
 	
-		if (date <= 0 && date < 31) {
+		if (date <= 0 && date > 31) {
 			System.out.println("Nav tâda mçneða diena !!! ");
-		} else if (date >=1 && date <=31) {
+		} else  {
 		     System.out.println(" Paldies ");
 		}
 		
@@ -20,12 +22,11 @@ public class DateValidator {
 		
 		
 		// month
-		System.out.println("Ievadi mçneða datumu : ");
-		int month = scanner.nextInt();
+	
 		
-		if (month == 0 && month < 12) {
+		if (month == 0 && month > 12) {
 			System.out.println("Nav tâda mçneða datuma !!! ");
-		} 	 else if (month >=1 && month <=12) {
+		} 	 else  {
 		     System.out.println(" Paldies ");
 		}
 		scanner.close();
