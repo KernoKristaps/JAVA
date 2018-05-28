@@ -9,7 +9,7 @@ public class HelloUser {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Ievadi savu vârdu un uzvârdu: ");
 		String NAME = scanner.next();
-		String SURNAME = scanner.next();
+		String SURNAME = scanner.next(); //nextLine() nolasa visu rindiòu
 		scanner.close();
 		
 		String NAME1 = NAME.substring(0, 1).toUpperCase() + NAME.substring(1).toLowerCase();
